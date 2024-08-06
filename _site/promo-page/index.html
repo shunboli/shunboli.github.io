@@ -69,13 +69,13 @@
     <script>
         function acceptCookies() {
             
-            Cookies.set('showCookieBanner', 'false', { expires: 7, path: '/' });
-            Cookies.set('cookiesAccepted', 'true', {expires: 7, path: '/'});
+            Cookies.set('showCookieBanner', 'false', { expires: 365, path: '/' });
+            Cookies.set('cookiesAccepted', 'true', {expires: 365, path: '/'});
             toggleCookieBanner();
         }
 
         function rejectCookies() {
-            Cookies.set('showCookieBanner', 'false', { expires: 7, path: '/' });
+            Cookies.set('showCookieBanner', 'false', { expires: 365, path: '/' });
             toggleCookieBanner();
         }
 

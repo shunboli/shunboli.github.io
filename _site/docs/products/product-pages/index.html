@@ -73,13 +73,13 @@
     <script>
         function acceptCookies() {
             
-            Cookies.set('showCookieBanner', 'false', { expires: 7, path: '/' });
-            Cookies.set('cookiesAccepted', 'true', {expires: 7, path: '/'});
+            Cookies.set('showCookieBanner', 'false', { expires: 365, path: '/' });
+            Cookies.set('cookiesAccepted', 'true', {expires: 365, path: '/'});
             toggleCookieBanner();
         }
 
         function rejectCookies() {
-            Cookies.set('showCookieBanner', 'false', { expires: 7, path: '/' });
+            Cookies.set('showCookieBanner', 'false', { expires: 365, path: '/' });
             toggleCookieBanner();
         }
 
@@ -441,6 +441,7 @@
         <p class="menu-label">Contents</p>
         <ul class="menu-list">
   <li><a href="#products-directory">Products Directory</a></li>
+  <li><a href="#custom-collection-directory">Custom Collection Directory</a></li>
   <li><a href="#product-pages">Product Pages</a></li>
   <li><a href="#product-collections">Product Collections</a></li>
 </ul>
@@ -451,7 +452,11 @@
 <div class="content">
     <h2 id="products-directory">Products Directory</h2>
 
-<p>Start by creating a <code class="language-plaintext highlighter-rouge">_products</code> directory to hold your product pages.</p>
+<p>The default collection name for products is <code class="language-plaintext highlighter-rouge">products</code>, so create a <code class="language-plaintext highlighter-rouge">_products</code> directory to hold your product pages.</p>
+
+<h2 id="custom-collection-directory">Custom Collection Directory</h2>
+
+<p>You can override the default and create a folder with your own collection name. For example, using a collection of <code class="language-plaintext highlighter-rouge">books</code> would require you to create a folder called <code class="language-plaintext highlighter-rouge">_books</code>.</p>
 
 <h2 id="product-pages">Product Pages</h2>
 
@@ -492,6 +497,27 @@
 </code></pre></div></div>
 
 <p>You can also set default product page values here if you like, such as the layout or image.</p>
+
+<div x-data="{visible: true}">
+    <div class="notification is-warning my-4" x-show.transition.duration.300ms="visible">
+        
+        <article class="media">
+            
+                <div class="media-left">
+                    <span class="icon">
+                        <i class="fas fa-exclamation-circle fa-lg"></i>
+                    </span>
+                </div>
+            
+            <div class="media-content">
+                <div class="content"><p>If you use a custom collection name then update <code class="language-plaintext highlighter-rouge">products</code> to your custom collection name. In the example above for the <code class="language-plaintext highlighter-rouge">_books</code> folder use <code class="language-plaintext highlighter-rouge">books</code> as the collection name.</p>
+</div>
+            </div>
+        </article>
+    </div>
+</div>
+
+<p>For more information on collections, please refer to the <a href="https://jekyllrb.com/docs/collections/">Jekyll documentation</a>.</p>
 
 </div>
 

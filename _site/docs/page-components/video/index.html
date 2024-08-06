@@ -73,13 +73,13 @@
     <script>
         function acceptCookies() {
             
-            Cookies.set('showCookieBanner', 'false', { expires: 7, path: '/' });
-            Cookies.set('cookiesAccepted', 'true', {expires: 7, path: '/'});
+            Cookies.set('showCookieBanner', 'false', { expires: 365, path: '/' });
+            Cookies.set('cookiesAccepted', 'true', {expires: 365, path: '/'});
             toggleCookieBanner();
         }
 
         function rejectCookies() {
-            Cookies.set('showCookieBanner', 'false', { expires: 7, path: '/' });
+            Cookies.set('showCookieBanner', 'false', { expires: 365, path: '/' });
             toggleCookieBanner();
         }
 
@@ -446,6 +446,7 @@
       <li><a href="#start-time">Start Time</a></li>
     </ul>
   </li>
+  <li><a href="#tiktok-video">TikTok Video</a></li>
   <li><a href="#vimeo-video">Vimeo Video</a></li>
 </ul>
     </div>
@@ -473,6 +474,17 @@
 
 <div class="language-liquid highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">{%</span><span class="w"> </span><span class="nt">include</span><span class="w"> </span>youtube.html<span class="w"> </span><span class="na">video</span><span class="o">=</span><span class="s2">"videoid"</span><span class="w"> </span><span class="na">time</span><span class="o">=</span><span class="mi">210</span><span class="w"> </span><span class="cp">%}</span>
 </code></pre></div></div>
+
+<h2 id="tiktok-video">TikTok Video</h2>
+
+<p>You can include a TikTok video by passing in the video id to the tiktok.html.</p>
+
+<div class="language-liquid highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">{%</span><span class="w"> </span><span class="nt">include</span><span class="w"> </span>tiktok.html<span class="w"> </span><span class="na">video</span><span class="o">=</span><span class="s2">"videoid"</span><span class="w"> </span><span class="cp">%}</span>
+</code></pre></div></div>
+
+<figure class="image is-16by9">
+    <iframe src="https://www.tiktok.com/player/v1/7342927568523283755?controls=1&amp;rel=0&amp;autoplay=0" class="has-ratio"></iframe>
+</figure>
 
 <h2 id="vimeo-video">Vimeo Video</h2>
 

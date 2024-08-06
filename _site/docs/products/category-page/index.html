@@ -73,13 +73,13 @@
     <script>
         function acceptCookies() {
             
-            Cookies.set('showCookieBanner', 'false', { expires: 7, path: '/' });
-            Cookies.set('cookiesAccepted', 'true', {expires: 7, path: '/'});
+            Cookies.set('showCookieBanner', 'false', { expires: 365, path: '/' });
+            Cookies.set('cookiesAccepted', 'true', {expires: 365, path: '/'});
             toggleCookieBanner();
         }
 
         function rejectCookies() {
-            Cookies.set('showCookieBanner', 'false', { expires: 7, path: '/' });
+            Cookies.set('showCookieBanner', 'false', { expires: 365, path: '/' });
             toggleCookieBanner();
         }
 
@@ -441,6 +441,7 @@
         <p class="menu-label">Contents</p>
         <ul class="menu-list">
   <li><a href="#category-page">Category Page</a></li>
+  <li><a href="#customising-the-collection">Customising the collection</a></li>
 </ul>
     </div>
 </div>
@@ -461,6 +462,20 @@
 </code></pre></div></div>
 
 <p><a href="/bulma-clean-theme/products/">View example Category page</a></p>
+
+<h2 id="customising-the-collection">Customising the collection</h2>
+
+<p>To use a different collection than <code class="language-plaintext highlighter-rouge">products</code>, set the collection name in the category page’s front matter.</p>
+
+<p>The below example uses a collection called <code class="language-plaintext highlighter-rouge">books</code>.</p>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">title</span><span class="pi">:</span> <span class="s">Books</span>
+<span class="na">subtitle</span><span class="pi">:</span> <span class="s">Check out our range of books</span>
+<span class="na">layout</span><span class="pi">:</span> <span class="s">product-category</span>
+<span class="na">show_sidebar</span><span class="pi">:</span> <span class="kc">false</span>
+<span class="na">sort</span><span class="pi">:</span> <span class="s">title</span>
+<span class="na">collection</span><span class="pi">:</span> <span class="s">books</span>
+</code></pre></div></div>
 
 </div>
 
