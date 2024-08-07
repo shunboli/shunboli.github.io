@@ -9,7 +9,7 @@ baseurl:
 url: "http://shunboli.github.io"
 permalink: pretty
 #favicon: /path/to/favicon.png
-gh_sponsor: leastbyte
+# gh_sponsor: leastbyte
 #hide_share_buttons: true
 #theme_color: '#eeeeee'
 #fixed_navbar: top
