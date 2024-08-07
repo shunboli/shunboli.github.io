@@ -1,7 +1,7 @@
 # Site Settings
-lang: cn
+lang: en
 title: leastbye's blog
-# tagline: leastbye's blog
+tagline: leastbye's blog
 email: 
 description: >
   The demo site for leastbye's blog, made for Jekyll and GitHub pages websites

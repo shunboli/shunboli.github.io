@@ -1,8 +1,8 @@
 ---
-title: leastbyte'blog
-subtitle: This is the demo site for Bulma Clean Theme
+# title: leastbyte'blog
+# subtitle: This is the demo site for Bulma Clean Theme
 layout: page
-# callouts: home_callouts
+callouts: home_callouts
 show_sidebar: true
 ---
 
