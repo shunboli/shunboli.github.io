@@ -1,5 +1,5 @@
 # Site Settings
-lang: en
+lang: cn
 title: leastbye's blog
 tagline: leastbye's blog
 email: 
@@ -68,7 +68,7 @@ defaults:
       path: ""
       type: "posts"
     values:
-      author: "C.S. Rhymes"
+      author: "shunboli"
       layout: post
       image: https://via.placeholder.com/1200x800
       show_sidebar: true
